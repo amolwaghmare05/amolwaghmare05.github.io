@@ -667,7 +667,7 @@ section {
 
 .tech-skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     gap: 2rem;
 }
 
@@ -1301,7 +1301,36 @@ section {
     }
     
     .tech-skills-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+    
+    .tech-skill-category {
+        padding: 1.5rem;
+        grid-column: span 1 !important;
+        grid-row: span 1 !important;
+    }
+    
+    .other-skills-wide {
+        grid-column: span 1 !important;
+    }
+    
+    .iot-tall {
+        grid-row: span 1 !important;
+    }
+    
+    .tech-skill-category h4 {
+        font-size: 1rem;
+    }
+    
+    .tech-tag {
+        font-size: 0.8rem;
+        padding: 0.5rem 0.9rem;
+    }
+    
+    .soft-skills-grid {
         grid-template-columns: 1fr;
+        gap: 1.2rem;
     }
     
     .about-info h1 {
@@ -1384,7 +1413,44 @@ section {
     }
     
     .tech-skills-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem;
+    }
+    
+    .tech-skill-category {
+        padding: 1.2rem;
+        grid-column: span 1 !important;
+        grid-row: span 1 !important;
+    }
+    
+    .other-skills-wide {
+        grid-column: span 1 !important;
+    }
+    
+    .iot-tall {
+        grid-row: span 1 !important;
+    }
+    
+    .tech-skill-category h4 {
+        font-size: 0.95rem;
+    }
+    
+    .tech-tag {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .skills-category h3 {
+        font-size: 1.5rem;
+    }
+    
+    .soft-skills-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .soft-skill-card {
+        padding: 1.5rem;
     }
     
     .btn-show-more {
