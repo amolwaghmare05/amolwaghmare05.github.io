@@ -1499,6 +1499,15 @@ section {
         font-size: 0.9rem;
     }
     
+    .hero-buttons {
+        margin-bottom: 2rem;
+    }
+    
+    .scroll-indicator {
+        bottom: 15px;
+        font-size: 1.2rem;
+    }
+    
     .project-card {
         padding: 1.5rem;
         width: 100%;
