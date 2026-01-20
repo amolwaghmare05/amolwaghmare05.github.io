@@ -1236,6 +1236,7 @@ section {
         padding: 2rem 0;
         gap: 0;
         border-bottom: 1px solid var(--border-color);
+        z-index: 999;
     }
     
     .nav-menu.active {
@@ -1278,6 +1279,7 @@ section {
     .hero-buttons {
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
     }
     
     .hero-buttons .btn {
@@ -1297,15 +1299,41 @@ section {
         margin: 10% 20px;
         padding: 2rem;
     }
+    
+    .tech-skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-info h1 {
+        font-size: 1.8rem;
+    }
+    
+    .about-info p {
+        font-size: 0.95rem;
+    }
+    
+    .resume-section h3 {
+        font-size: 1.3rem;
+    }
+    
+    .btn-show-more {
+        width: 90%;
+        max-width: 300px;
+    }
 }
 
 @media (max-width: 480px) {
     :root {
         --section-padding: 50px 0;
+        --container-padding: 0 15px;
     }
     
     .section-title {
         font-size: 1.8rem;
+    }
+    
+    .section-subtitle {
+        font-size: 0.95rem;
     }
     
     .image-container {
@@ -1327,6 +1355,57 @@ section {
     
     .timeline-marker {
         left: -2.25rem;
+    }
+    
+    .hero-buttons .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .project-card {
+        padding: 1.5rem;
+    }
+    
+    .project-title {
+        font-size: 1.2rem;
+    }
+    
+    .project-description {
+        font-size: 0.9rem;
+    }
+    
+    .contact-card {
+        padding: 1.5rem;
+    }
+    
+    .modal-content {
+        padding: 1.5rem;
+        margin: 15% 15px;
+    }
+    
+    .tech-skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .btn-show-more {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Additional tablet improvements */
+@media (min-width: 481px) and (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .image-container {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
     }
 }
 
