@@ -99,6 +99,7 @@ section {
     background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
     margin: 1rem auto;
     border-radius: 2px;
+    max-width: 100%;
 }
 
 .section-subtitle {
@@ -922,6 +923,8 @@ section {
    =========================== */
 .contact {
     background: var(--bg-darker);
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .contact-content {
@@ -1422,6 +1425,23 @@ section {
         max-width: 100%;
     }
     
+    .contact,
+    .hero,
+    .about,
+    .resume,
+    .skills,
+    .projects {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
     .hero::before,
     .hero::after {
         width: min(400px, 60vw);
@@ -1433,6 +1453,15 @@ section {
     .soft-skills-grid {
         width: 100%;
         max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .project-card,
+    .tech-skill-category,
+    .soft-skill-card {
+        width: 100%;
+        box-sizing: border-box;
     }
     
     .section-title {
@@ -1480,6 +1509,8 @@ section {
     
     .project-card {
         padding: 1.5rem;
+        width: 100%;
+        box-sizing: border-box;
     }
     
     .project-title {
@@ -1533,6 +1564,9 @@ section {
     
     .contact-card {
         padding: 1.5rem;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
     }
     
     .contact-card i {
@@ -1546,16 +1580,26 @@ section {
     .contact-card p {
         font-size: 0.9rem;
         word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    .contact-info {
+        width: 100%;
+        gap: 1rem;
     }
     
     .contact-form-container {
         padding: 1.5rem;
+        width: 100%;
+        box-sizing: border-box;
     }
     
     .form-group input,
     .form-group textarea {
         padding: 0.8rem;
         font-size: 0.9rem;
+        width: 100%;
+        box-sizing: border-box;
     }
     
     .form-group textarea {
@@ -1564,6 +1608,8 @@ section {
     
     .contact-content {
         gap: 1.5rem;
+        width: 100%;
+        padding: 0;
     }
     
     .footer-content {
