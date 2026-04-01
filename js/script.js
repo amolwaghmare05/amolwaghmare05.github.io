@@ -41,6 +41,18 @@ navLinks.forEach(link => {
     });
 });
 
+// Toggle semester results
+function toggleResult(element) {
+    const results = element.querySelector('.semester-results');
+    if (results) {
+        if (results.style.display === 'none' || results.style.display === '') {
+            results.style.display = 'block';
+        } else {
+            results.style.display = 'none';
+        }
+    }
+}
+
 // Navbar scroll effect
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
