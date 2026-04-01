@@ -8,7 +8,7 @@ Welcome to the repository for my personal developer portfolio!
 I am a BTech Information Technology Student at AISSMS IOIT specializing in Full-Stack MERN Development and Java DSA. I am passionate about building scalable web applications, solving complex algorithmic challenges, and exploring modern technologies like IoT and Machine Learning.
 
 ## 🚀 Technologies Used
-- **Frontend Core:** HTML5, CSS3, Vanilla JavaScript
+- **Frontend Core:** HTML5, CSS3, JavaScript
 - **Styling:** Custom sleek dark theme with CSS Variables
 - **Deployment:** GitHub Pages
 - **Typography & Icons:** FontAwesome APIs, Google Fonts (Poppins family)
